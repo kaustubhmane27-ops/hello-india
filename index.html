@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello India</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ff9933;
+            font-size: 40px;
+        }
+
+        img {
+            width: 300px;
+            border: 2px solid #000;
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: green;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #138808;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #0b5d05;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🇮🇳 Hello India 🇮🇳</h1>
+
+    <!-- Indian Flag -->
+    <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="Indian Flag">
+
+    <!-- National Anthem -->
+    <h2>National Anthem of India</h2>
+
+    <p>
+        Jana-gana-mana adhinayaka, jaya he <br>
+        Bharata-bhagya-vidhata <br>
+        Punjab-Sindh-Gujarat-Maratha <br>
+        Dravida-Utkala-Banga <br>
+        Vindhya-Himachala-Yamuna-Ganga <br>
+        Uchchala-jaladhi-taranga <br>
+        Tava shubha name jage <br>
+        Tava shubha asisa mage <br>
+        Gahe tava jaya-gatha <br>
+        Jana-gana-mangala-dayaka jaya he <br>
+        Bharata-bhagya-vidhata <br>
+        Jaya he, Jaya he, Jaya he <br>
+        Jaya jaya jaya jaya he
+    </p>
+
+    <!-- Anthem Audio -->
+    <button onclick="playAnthem()">Play National Anthem</button>
+
+    <audio id="anthem">
+        <source src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Jana_Gana_Mana_-_Vocal.ogg" type="audio/ogg">
+        Your browser does not support audio.
+    </audio>
+
+    <script>
+        function playAnthem() {
+            document.getElementById("anthem").play();
+        }
+    </script>
+
+</body>
+</html>
